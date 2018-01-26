@@ -7,7 +7,7 @@ kibana-plugin-traffic
 
 Note:
 -------------
-This only works before v. 5.5.x. After that version, Kibana moved to imports.
+This works for v.5.5.x+, up until v. 6.0.0.
 
 Introduction
 -------------
