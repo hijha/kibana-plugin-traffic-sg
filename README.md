@@ -4,6 +4,11 @@ kibana-plugin-traffic
 
 ![screenshot](./screenshot.png)
 
+
+Note:
+-------------
+This only works before v. 5.5.x. After that version, Kibana moved to imports.
+
 Introduction
 -------------
 
