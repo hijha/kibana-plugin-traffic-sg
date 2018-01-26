@@ -1,3 +1,26 @@
+class TrafficSgController {
+  constructor(el, vis) {
+    this.el = el;
+    this.vis = vis;
+    this.container = document.createElement('div');
+    this.container.className = 'traffic-container';
+    this.el.appendChild(this.container);
+  }
+
+  render(visData, status) {
+    return new Promise(resolve => {
+      resolve('Done rendering');
+    })
+  }
+
+  destroy() {
+    this.el.innerHTML = '';
+    console.log('Destroying');
+  }
+};
+
+export { TrafficSgController }
+
 define(function (require) {
 
   var module = require('ui/modules').get('kibana/traffic_sg', ['kibana']);
