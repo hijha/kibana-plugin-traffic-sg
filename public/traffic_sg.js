@@ -3,9 +3,9 @@ import { VisFactoryProvider } from 'ui/vis/vis_factory';
 import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
 import { VisSchemasProvider } from 'ui/vis/editors/default/schemas';
 
-import './traffic_sg.less';
+import './traffic_sg.css';
 import optionsTemplate from './traffic_sg_params.html';
-import { TrafficSgController } from 'trafic_sg_controller';
+import { TrafficSgController } from './traffic_sg_controller';
 
 const TrafficSgVisualization = (Private) => {
   const VisFactory = Private(VisFactoryProvider);
@@ -41,6 +41,14 @@ const TrafficSgVisualization = (Private) => {
           defaults: [
             { type: 'count', schema: 'metric' }
           ]
+        },
+        {
+          group: 'buckets',
+          name: 'segment',
+          title: 'X-Axis',
+          min: 0,
+          max: 1,
+          aggFilter: ['terms']
         }
       ])
     }
