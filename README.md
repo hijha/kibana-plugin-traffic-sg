@@ -5,19 +5,19 @@ kibana-plugin-traffic
 ![screenshot](./screenshot.png)
 
 
-Note:
+Note
 -------------
-This only works before v. 5.5.x. After that version, Kibana moved to imports.
+The original plugin at https://github.com/sbeyn/kibana-plugin-traffic-sg, works only for Kibana vrsions 5.4.x and before. After v.5.5.0, Kibana moved to imports. The original code is available in branch 5.4.x here, for 5.5.x+, the code is available in branch 5.6.x.
+
+The master branch is for Kibana 6.x.x.
+
 
 Introduction
 -------------
 
-Ce plugin permet la création d'un graphique de type feu tricolor sur Kibana 4.x et 5.x:
+This plugin allows you to create a Traffic light visualization in Kibana with threshold values for 3 colors.
 
-* Définition du label
-* Définition des niveaux
-
-Contenu
+Content
 -------
 ```
 .
@@ -31,28 +31,38 @@ Contenu
 │   └── traffic_sg_params.html
 └── README.md
 ```
-Le plugin a été créé à partir des librairies Kibana et basé sur le framework Angularjs.
 
 
 Installation
 ------------
 
-Pour les versions de kibana-4.x:
+To install the plugin for Kibana 4.x:
 ```
         $ cd <path>/kibana/installedPlugins
         $ git clone -b 4.x <depot> traffic-sg
 ```
 
-Pour les versions de kibana-5.x:
+To install the plugin for Kibana < 5.5.x:
+```
+        $ cd <path>/kibana/plugins
+        $ git clone -b 5.4.x <depot> traffic-sg
+```
+
+To install the plugin for Kibana >= 5.5.x:
+```
+        $ cd <path>/kibana/plugins
+        $ git clone -b 5.6.x <depot> traffic-sg
+```
+
+To install the plugin for Kibana 6.x:
 ```
         $ cd <path>/kibana/plugins
         $ git clone <depot> traffic-sg
 ```
 
-Désinstallation
+Uninstalling
 ---------------
 
 ```
         $ bin/kibana plugin  --remove traffic_sg
 ```
-
