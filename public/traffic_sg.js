@@ -3,7 +3,7 @@ import { VisFactoryProvider } from 'ui/vis/vis_factory';
 import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
 import { VisSchemasProvider } from 'ui/vis/editors/default/schemas';
 
-import './traffic_sg.css';
+import './traffic_sg.less';
 import optionsTemplate from './traffic_sg_params.html';
 import { TrafficSgController } from './traffic_sg_controller';
 
